@@ -5,7 +5,7 @@ import '../CSS Files/Welcome.css';
 const Welcome = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-      <h1 className="text-6xl font-extrabold mb-12 text-white drop-shadow-lg">Welcome to IQ Test</h1>
+      <h1 className="text-6xl font-extrabold mb-12 text-white drop-shadow-lg">Quiz App</h1>
       <div className="space-x-6">
         <Link to="/login" className="button-wrapper">
           <svg className="button-svg" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">

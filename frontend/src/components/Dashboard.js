@@ -112,7 +112,7 @@ const Dashboard = () => {
                         <p className="text-lg font-medium text-white">Total Score: <span className="text-green-600">{totalScore}</span></p>
                         <p className="text-lg font-medium text-white">Total Questions: <span className="text-green-600">{totalQuestions}</span></p>
                         {iqScore !== null && (
-                            <p className="text-lg font-medium text-white">Estimated IQ Score: <span className="text-green-600">{iqScore}</span></p>
+                            <p className="text-lg font-medium text-white">Estimated Average Score: <span className="text-green-600">{iqScore}</span></p>
                         )}
                     </div>
                     <footer className="text-white mt-4">
