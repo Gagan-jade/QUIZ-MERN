@@ -116,7 +116,7 @@ const Dashboard = () => {
                         )}
                     </div>
                     <footer className="text-white mt-4">
-                        <p className="text-sm">&copy; 2024 Made by Varun, Saakshi, Shriya, Gagan. Thank you.</p>
+                        <p className="text-sm">&copy; 2024 Made by Gagan. Thank you.</p>
                     </footer>
                 </div>
                 
