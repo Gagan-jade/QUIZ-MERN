@@ -1,0 +1,64 @@
+html, body {
+  background: #333;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-wrapper {
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+}
+
+.button-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-rect {
+  fill: transparent;
+  stroke-dasharray: 200 800;
+  stroke-dashoffset: -760;
+  stroke-width: 6px;
+  stroke: url(#logo-gradient);
+  transition: stroke-width 0.5s ease;
+}
+
+.button-text {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  letter-spacing: 10px;
+  line-height: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.button-wrapper:hover .button-rect {
+  cursor: pointer;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 0;
+  stroke-width: 4px;
+  animation: draw 0.5s linear forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 200 800;
+    stroke-dashoffset: -760;
+    stroke-width: 6px;
+  }
+  100% {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 0;
+    stroke-width: 4px;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}

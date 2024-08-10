@@ -1,0 +1,44 @@
+.input-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .input-rect {
+    fill: transparent;
+    stroke-dasharray: 400 1200;
+    stroke-dashoffset: -1150;
+    stroke-width: 8px;
+    stroke: url(#input-gradient);
+    transition: stroke-width 0.5s ease;
+  }
+  
+  input {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .input-border:hover .input-rect {
+    cursor: pointer;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 0;
+    stroke-width: 6px;
+    animation: draw 0.5s linear forwards;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 400 1200;
+      stroke-dashoffset: -1150;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 0;
+      stroke-width: 6px;
+    }
+  }
+  
